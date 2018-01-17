@@ -21,4 +21,11 @@ public class Fagbøker extends Bøker {
     }
 
 
+    public String getFagfelt() {
+        return fagfelt;
+    }
+
+    public boolean isStudentUtgave() {
+        return studentUtgave;
+    }
 }

@@ -16,4 +16,8 @@ public class SkjønnlitteræreBøker extends Bøker {
                 "Antall sider: " + getAntallSider() + "\n" +
                 "Sjanger: " + sjanger);
     }
+
+    public String getSjanger() {
+        return sjanger;
+    }
 }

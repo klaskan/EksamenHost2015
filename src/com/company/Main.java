@@ -53,7 +53,18 @@ public class Main {
 
             Klokkeslett klokkeslett = new Klokkeslett(25, 120, 6);
             klokkeslett.visTid();
+            //String tittel, int antallSider, String fagfelt, boolean studentUtgave
+            Fagbøker fagbok1 = new Fagbøker("klas", "GeografiBoka", 60, "Geografi", false);
+            Fagbøker fagbok2 = new Fagbøker("Ida", "matteboka", 100, "Matte", true);
+            SkjønnlitteræreBøker skjønnlitteræreBøker1 = new SkjønnlitteræreBøker("anna", "Brille", 200, "Krim");
 
+            KursSammling kursSammling = new KursSammling();
+            BokSamling bokSamling = new BokSamling();
+            bokSamling.leggTilBok(fagbok1);
+            bokSamling.leggTilBok(skjønnlitteræreBøker1);
+            bokSamling.leggTilBok(fagbok2);
+            System.out.println(bokSamling.antallBøker());
+            bokSamling.skrivUtBøkerInfo();
 
 
 
