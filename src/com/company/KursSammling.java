@@ -20,6 +20,15 @@ public class KursSammling {
         return true;
     }
 
+    public Fagbøker hentFagbok(String kursKode){
+        if(!kurs.containsKey(kursKode)){
+            System.out.println("Dette kurset finnes ikke");
+            return null;
+        }else{
+            return kurs.get(kursKode);
+        }
+    }
+
 
 
 }
