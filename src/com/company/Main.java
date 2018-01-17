@@ -54,9 +54,9 @@ public class Main {
             Klokkeslett klokkeslett = new Klokkeslett(25, 120, 6);
             klokkeslett.visTid();
             //String tittel, int antallSider, String fagfelt, boolean studentUtgave
-            Fagbøker fagbok1 = new Fagbøker("klas", "GeografiBoka", 60, "Geografi", false);
-            Fagbøker fagbok2 = new Fagbøker("Ida", "matteboka", 100, "Matte", true);
-            SkjønnlitteræreBøker skjønnlitteræreBøker1 = new SkjønnlitteræreBøker("anna", "Brille", 200, "Krim");
+            Fagbøker fagbok1 = new Fagbøker("klas", "GeografiBoka", 60, "Geografi", false, "fagbok");
+            Fagbøker fagbok2 = new Fagbøker("Ida", "matteboka", 100, "Matte", true, "skjønnliterær");
+            SkjønnlitteræreBøker skjønnlitteræreBøker1 = new SkjønnlitteræreBøker("anna", "Brille", 200, "Krim", "fagbok");
 
             KursSammling kursSammling = new KursSammling();
             BokSamling bokSamling = new BokSamling();
@@ -65,6 +65,7 @@ public class Main {
             bokSamling.leggTilBok(fagbok2);
             System.out.println(bokSamling.antallBøker());
             bokSamling.skrivUtBøkerInfo();
+            System.out.println(bokSamling.antallFagbøker());
 
 
 

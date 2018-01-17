@@ -27,13 +27,15 @@ public class BokSamling {
     public int antallFagbøker(){
         int antallFagbøker = 0;
         for(Bøker b : boksamling){
-            if(b){
+            if(b.getType().toLowerCase().equals("fagbok")){
                 antallFagbøker++;
             }
         }
         return antallFagbøker;
 
     }
+
+
 
 
 }

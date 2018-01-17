@@ -6,8 +6,8 @@ public class Fagbøker extends Bøker {
     private boolean studentUtgave;
 
 
-    public Fagbøker(String forfatter, String tittel, int antallSider, String fagfelt, boolean studentUtgave){
-        super(forfatter, tittel, antallSider);
+    public Fagbøker(String forfatter, String tittel, int antallSider, String fagfelt, boolean studentUtgave, String type){
+        super(forfatter, tittel, antallSider, type);
         this.fagfelt = fagfelt;
         this.studentUtgave = studentUtgave;
     }
@@ -17,7 +17,8 @@ public class Fagbøker extends Bøker {
                             "Tittel: " + getTittel() + "\n" +
                             "Antall sider: " + getAntallSider() + "\n" +
                             "Fagfelt: " + fagfelt + "\n" +
-                            "Studentutgave: " + studentUtgave);
+                            "Studentutgave: " + studentUtgave + "\n" +
+                            "Type: " + getType());
     }
 
 
