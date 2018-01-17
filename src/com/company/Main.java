@@ -66,6 +66,7 @@ public class Main {
             System.out.println(bokSamling.antallBøker());
             bokSamling.skrivUtBøkerInfo();
             System.out.println(bokSamling.antallFagbøker());
+            System.out.println(fagbok1.getForfatter());
 
 
 
